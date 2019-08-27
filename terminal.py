@@ -14,3 +14,4 @@ def main():
         else:
             print("Sorry, this is not a command :(")
         print()
+main()

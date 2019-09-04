@@ -18,6 +18,11 @@ def main():
             print("Sorry, you cannot use arguments and parameters in echo right now :(")
             echoThis = input("Type what you want to echo: ")
             os.system('echo ' +echoThis)
+        if "rm -Rf" in inp:
+            print("Sorry, you cannot use arguments and Parameters in rm right now")
+            deleteThis = input("Type what you want to delete")
+            os.system('rm -Rf ' +deleteThis)
+            print("Completed")
         else:
             print("Sorry, this is not a command :(")
         print()

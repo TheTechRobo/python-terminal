@@ -1,4 +1,5 @@
 import os
+import time
 print()
 def main():
     print("Welcome to pyTerm!")

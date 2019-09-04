@@ -12,7 +12,9 @@ def main():
         if "pico" in inp:
             print("sorry, you cannot use arguments and parameters in pico right now :(")
             picoThis = input("File-Name? ")
+            print("You have 3000 seconds")
             os.system('pico' +picoThis)
+            time.sleep(3000)
         elif "echo" in inp:
             print("Sorry, you cannot use arguments and parameters in echo right now :(")
             echoThis = input("Type what you want to echo: ")

@@ -20,7 +20,7 @@ def main():
             os.system('echo ' +echoThis)
         if "rm -Rf" in inp:
             print("Sorry, you cannot use arguments and Parameters in rm right now")
-            deleteThis = input("Type what you want to delete")
+            deleteThis = input("Type what you want to delete: ")
             os.system('rm -Rf ' +deleteThis)
             print("Completed")
         else:

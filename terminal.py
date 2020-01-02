@@ -10,10 +10,10 @@ def main():
     while True:
         print()
         inp = input("$ ")
-        #if "pico" in inp:
+        if "pico" in inp:
             #print("sorry, you cannot use arguments and parameters in pico right now :(")
-            #picoThis = input("File-Name? ")
-            #os.system('pico' +picoThis)
+            picoThis = input("File-Name? ")
+            os.system('pico ' +picoThis)
         if "echo" in inp:
             print("Sorry, you cannot use arguments and parameters in echo right now :(")
             echoThis = input("Type what you want to echo: ")

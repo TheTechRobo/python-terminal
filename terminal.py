@@ -11,7 +11,7 @@ def main():
         print("python: this is useless to you")
     while True:
         print()
-        inp = input("$ ")
+        inp = input("pyTerm-0.2 $ ")
         if "pico" in inp:
             print("sorry, you cannot use arguments and parameters in pico right now :(")
             picoThis = input("File-Name? ")

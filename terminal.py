@@ -3,9 +3,8 @@ import time
 print()
 def main():
     print("Welcome to pyTerm!")
-    print("==================IMPORTANT!==================")
-    print("There is **NO INTERACTIVITY** for commands apart from the ones programmed into this program.")
-    print("E.g. commands like man will NOT WORK.\nJust an FYI.")
+    print("==============================IMPORTANT!==============================")
+    print("There is **LITTLE TO NO INTERACTIVITY** for commands apart from the ones programmed into this program.")
     print("Please wait while I set everything up...")
     lin = input("python: are you running Linux or Mac? (yes / no, case-sensitive)")
     if lin == "no":

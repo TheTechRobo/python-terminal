@@ -3,6 +3,9 @@ import time
 print()
 def main():
     print("Welcome to pyTerm!")
+    print("==================IMPORTANT!==================")
+    print("There is **NO INTERACTIVITY** for commands apart from the ones programmed into this program.")
+    print("E.g. commands like man will NOT WORK.\nJust an FYI.")
     print("Please wait while I set everything up...")
     lin = input("python: are you running Linux or Mac? (yes / no, case-sensitive)")
     if lin == "no":
@@ -11,7 +14,7 @@ def main():
         print()
         inp = input("$ ")
         if "pico" in inp:
-            #print("sorry, you cannot use arguments and parameters in pico right now :(")
+            print("sorry, you cannot use arguments and parameters in pico right now :(")
             picoThis = input("File-Name? ")
             os.system('pico ' +picoThis)
         if "echo" in inp:
@@ -23,7 +26,9 @@ def main():
             deleteThis = input("Type what you want to delete: ")
             os.system('rm -Rf ' +deleteThis)
             print("Completed")
+        elif "python" in inp:
+            pyThis = input("")
         else:
-            print("Sorry, this is not a command :(")
+            os.system(inp)
         print()
 main()

@@ -27,6 +27,35 @@ def main():
             print("Completed")
         elif "python" in inp:
             pyThis = input("")
+        elif "ls" in inp:
+            lsWhat = input("Type in the folder to view (. for current): ")
+            os.system("ls "+lsWhat)
+        elif "calc" in inp:
+            print("This is not a Linux/Unix command but...")
+            calcWhat = int(input("First number?"))
+            print("Available operators: + - * / ^ (power)")
+            o = input("Choose one: ")
+            if o == "*":
+                calcWhat2 = int(input("Second number? "))
+                print(calcWhat2 * calcWhat)
+            elif o == "/":
+                cW2 = int(input("2nd number?"))
+                try:
+                    print(calcWhat / cW2)
+                except:
+                    print("Error in maths. Check that your equation is possible.")
+            elif o == "-":
+                cW2 = int(input("2nd number?"))
+                print(calcWhat - cW2)
+            elif o == "+":
+                cW2 = int(input("2nd number?? "))
+                print(calcWhat + cW2)
+            elif o == "^":
+                pwr = int(input("To the power of what? "))
+                for pwr in range:
+                    print(calcWhat * calcWhat)
+            else:
+                print("Unknown operator: "+o)
         else:
             os.system(inp)
         print()

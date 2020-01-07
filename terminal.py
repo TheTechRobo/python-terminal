@@ -52,8 +52,7 @@ def main():
                 print(calcWhat + cW2)
             elif o == "^":
                 pwr = int(input("To the power of what? "))
-                for pwr in range:
-                    print(calcWhat * calcWhat)
+                print(calcWhat ** pwr)
             else:
                 print("Unknown operator: "+o)
         else:

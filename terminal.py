@@ -1,14 +1,21 @@
 import os
 import time
 print()
+from sys import platform, exit
 def main():
     print("Welcome to pyTerm!")
     print("==============================IMPORTANT!==============================")
     print("There is **LITTLE TO NO INTERACTIVITY** for commands apart from the ones programmed into this program.")
     print("Please wait while I set everything up...")
-    lin = input("python: are you running Linux or Mac? (yes / no, case-sensitive)")
-    if lin == "no":
-        print("python: this is useless to you")
+    if platform == "linux" or platform == "linux2":
+        print("Done.\n OS STATUS: Supported")
+    elif platform == "darwin":
+        print("Done. \n OS STATUS: Supported")
+    elif platform == "win32":
+        print("You are using an unsupported OS.\nExiting...")
+        exit()
+    else:
+        print("I can't find out if you are using a supported OS. Your mileage may vary.")
     while True:
         print()
         inp = input("pyTerm-0.2 $ ")
@@ -55,6 +62,9 @@ def main():
                 print(calcWhat ** pwr)
             else:
                 print("Unknown operator: "+o)
+        elif inp == "exit":
+            print("Exiting.......")
+            exit()
         else:
             os.system(inp)
         print()

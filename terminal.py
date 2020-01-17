@@ -18,7 +18,7 @@ def main():
         print("I can't find out if you are using a supported OS. Your mileage may vary.")
     while True:
         print()
-        inp = input("pyTerm-0.2 $ ")
+        inp = input("pyTerm-0.2.1 $ ")
         if "pico" in inp:
             print("sorry, you cannot use arguments and parameters in pico right now :(")
             picoThis = input("File-Name? ")
